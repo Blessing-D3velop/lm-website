@@ -1,0 +1,70 @@
+/* ============================================================
+   RESPONSIVE LAYER
+   ============================================================ */
+
+/* ----- Laptop / small desktop ----- */
+@media (max-width: 1180px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+  .footer-grid .footer-col:last-child { grid-column: 1 / -1; }
+}
+
+/* ----- Tablet ----- */
+@media (max-width: 960px) {
+  .nav-links { display: none; }
+  .nav-cta .btn-outline { display: none; }
+  .hamburger { display: flex; }
+
+  .hero-grid { grid-template-columns: 1fr; text-align: left; }
+  .hero-visual { order: -1; max-width: 340px; margin: 0 auto 1rem; }
+  .hero-actions { justify-content: flex-start; }
+
+  .split, .split.reverse { grid-template-columns: 1fr; }
+  .split .split-media { order: -1 !important; }
+
+  .feature-grid { grid-template-columns: 1fr; }
+  .process-strip { grid-template-columns: repeat(2, 1fr); }
+  .ba-grid { grid-template-columns: 1fr; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+
+  .cta-band { flex-direction: column; align-items: flex-start; text-align: left; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
+  .footer-grid .footer-col:last-child { grid-column: auto; }
+}
+
+/* ----- Mobile ----- */
+@media (max-width: 640px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+  .process-strip { grid-template-columns: 1fr; }
+
+  .hero { text-align: center; }
+  .hero-grid { text-align: center; }
+  .hero-lead { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-trust { justify-content: center; }
+
+  .trust-bar-inner { gap: 1rem 1.6rem; }
+
+  .footer-grid { grid-template-columns: 1fr; text-align: left; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-close { top: 8px; right: 8px; }
+  .lightbox-counter { bottom: 10px; }
+  .lightbox-stage { max-width: 96vw; max-height: 78vh; }
+
+  .cta-band-actions { width: 100%; }
+  .cta-band-actions .btn { flex: 1; justify-content: center; }
+
+  .whatsapp-float { width: 54px; height: 54px; bottom: 16px; right: 16px; }
+}
+
+@media (max-width: 420px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
