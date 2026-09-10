@@ -8,18 +8,12 @@
 (function () {
   "use strict";
 
-  var GALLERY_COUNT = 25;
+  var GALLERY_COUNT = 22;
   var GALLERY_PATH = "images/gallery/";
   var GALLERY_EXT = ".jpeg";
 
   var GALLERY_CAPTIONS = [
-    "Interior Painting", "Exterior Painting", "Wall Preparation & Finish", "Commercial Painting Project",
-    "Floor Tiling", "Wall Tiling", "Bathroom Tiling", "Kitchen Tiling",
-    "Roof Waterproofing", "Wall Waterproofing", "Leak Repair", "Damp Proofing",
-    "Bathroom Makeover", "Shower Renovation", "Vanity Installation", "Modern Bathroom Finish",
-    "Precision Tile Detailing", "Paint Finish Detail", "Site Progress", "Before & After Result",
-    "Tile Detailing", "Feature Wall Finish", "Waterproof Membrane Application", "Renovation Project",
-    "Completed Project"
+
   ];
 
   function buildGalleryData() {
